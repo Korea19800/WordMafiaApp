@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_night2_gradient"
+    android:orientation="vertical"
+    tools:context="com.ulimbridge.wordmafia.Night10_04mafia">
+
+    <RelativeLayout
+        android:id="@+id/RL01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=" 밤 "
+            android:textColor="#FFFF00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/RL01" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/explicate_dohyeon"
+        android:text="당신은 마피아 입니다.\n처형할 사람의 번호를 입력해 주세요 "
+        android:textColor="#FFFF00"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/explicate_dohyeon"
+        android:text="만약 동료 마피아가 이미 번호를 선택했다면 그 번호를 입력해야 합니다 "
+        android:textColor="#FFFF00"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextMafiaMurder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:fontFamily="@font/explicate_dohyeon"
+        android:hint=" 처형 할 시민의 번호 "
+        android:inputType="number"
+        android:textColor="#FFFF00"
+        android:textColorHint="#FFFF00" />
+
+    <Button
+        android:id="@+id/buttonMafiaMurder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dark_night2_gradient"
+        android:text=" 처형 "
+        android:textColor="#FFFF00"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

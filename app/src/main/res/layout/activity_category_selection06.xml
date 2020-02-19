@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RL01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="단어 범주 선택"
+            android:textColor="@color/colorAccent2"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Space
+        android:id="@+id/space01"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/RL01" />
+
+    <LinearLayout
+        android:id="@+id/LL01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space01"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/explicate_dohyeon"
+            android:text=" 단어 범주 중 제외하고 싶은 범주를 체크하면 체크된 범주를 제외한 범주 중 랜덤으로 범주 1개가 추출됩니다.\n 제외하고 싶은 범주를 선택하지 않는다면 모든 범주 중 랜덤으로 범주 1개가 추출됩니다."
+            android:textColor="@color/colorAccent2"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LL01"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <Button
+
+            android:id="@+id/clickAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="전부 선택" />
+
+        <Button
+            android:id="@+id/cancelAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="전부 해제" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next" />
+
+    </LinearLayout>
+
+    <ListView
+        android:background="@drawable/listview_ecstasy_gradient"
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="20dp"
+        android:choiceMode="multipleChoice" />
+
+</RelativeLayout>

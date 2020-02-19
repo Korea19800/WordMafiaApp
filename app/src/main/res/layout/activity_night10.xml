@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_night2_gradient"
+    android:orientation="vertical"
+    tools:context="com.ulimbridge.wordmafia.Night10">
+    <RelativeLayout
+        android:id="@+id/RL01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=" 밤 "
+            android:textColor="#EEFF41"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/RL01" />
+
+    <RelativeLayout
+        android:id="@+id/RL02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button10"
+        android:layout_below="@+id/space"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/dark_night2_gradient"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text=" 밤이 되었습니다 "
+            android:fontFamily="@font/explicate_dohyeon"
+            android:textColor="#EEFF41"
+            android:textSize="24sp"
+             />
+        <TextView
+            android:layout_below="@id/textView1"
+            android:layout_marginTop="50dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/explicate_dohyeon"
+            android:text=" 모두 눈을 감고 허리를 숙여주세요.\n\n 자, 마피아만 고개를 들고 눈을 떠주세요 "
+            android:textColor="#FFFF00"
+            android:textSize="24sp"
+             />
+        <TextView
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="50dp"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/explicate_dohyeon"
+            android:text=" 서로를 확인하고 죽일 사람을 합의 해 주세요 "
+            android:textColor="#FFFF00"
+            android:textSize="24sp"
+             />
+
+    </RelativeLayout>
+
+    <Button
+        android:background="@drawable/dark_night2_gradient"
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFF00"
+        android:text=" 다음 "
+        android:textSize="18sp"
+        android:textStyle="bold"
+         />
+
+</RelativeLayout>

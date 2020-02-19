@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_night2_gradient"
+    android:orientation="vertical"
+    tools:context="com.ulimbridge.wordmafia.Night10_04mafia">
+
+    <RelativeLayout
+        android:id="@+id/RL01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=" 밤 "
+            android:textColor="#FFFF00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/RL01" />
+
+    <RelativeLayout
+        android:id="@+id/RL02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button10_03"
+        android:layout_below="@+id/space"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/dark_night2_gradient"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/explicate_dohyeon"
+            android:text=" 당신은 몇번째 플레이어인가요?\n\n직업을 확인하기 위해서\n 당신의 번호를 입력해주세요.\n\n  예) 3번째인 경우 3 입력"
+            android:textColor="#FFFF00"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextDistinguishJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint=" 나의 번호 "
+            android:fontFamily="@font/explicate_dohyeon"
+            android:inputType="number"
+            android:textColor="#FFFF00"
+            android:textColorHint="#FFFF00" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button10_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dark_night2_gradient"
+        android:text=" 다음 "
+        android:textColor="#FFFF00"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

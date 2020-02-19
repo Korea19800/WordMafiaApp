@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_green_black_gradient"
+    android:orientation="vertical"
+    tools:context="com.ulimbridge.wordmafia.RoleSelection07_03">
+
+    <RelativeLayout
+        android:id="@+id/RL01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=" 역할 배정 "
+            android:textColor="@color/colorAccent2"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/RL01" />
+    <Space
+        android:id="@+id/space5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/RL01" />
+    <TextView
+        android:layout_below="@id/space5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 역할과 단어를 확인한 후 아래의 '확인 완료' 를 누르고 다음 사람에게 폰을 넘기세요"
+        android:fontFamily="@font/explicate_dohyeon"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+    <RelativeLayout
+        android:id="@+id/RL02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button7_3"
+        android:layout_below="@+id/space"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/your"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="당신은 "
+            android:textColor="@color/colorAccent2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/your" />
+
+        <TextView
+            android:id="@+id/textJobConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/space2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text=" 마피아 "
+            android:fontFamily="@font/explicate_dohyeon"
+            android:textColor="@color/colorAccent2"
+            android:textSize="36sp"
+            android:textStyle="italic" />
+
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/textJobConfirm" />
+
+        <TextView
+            android:id="@+id/textHisWordIs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/space3"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text=" 마피아의 단어는 "
+            android:textColor="@color/colorAccent2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:id="@+id/space4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/textHisWordIs" />
+
+        <TextView
+            android:id="@+id/textKeyWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/space4"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text=" 나이키 "
+            android:fontFamily="@font/explicate_dohyeon"
+            android:textColor="#ff0000"
+            android:textSize="36sp"
+            />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button7_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text=" 확인 완료 "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+

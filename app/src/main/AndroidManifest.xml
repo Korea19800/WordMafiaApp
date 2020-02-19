@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ulimbridge.wordmafia">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_mafia2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_mafia2_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GameEnd11"></activity>
+        <activity android:name=".Night10_03Distinguish" />
+        <activity android:name=".Night10_05citizen" />
+        <activity android:name=".Night10_04mafia" />
+        <activity android:name=".Night10_02everybody" />
+        <activity android:name=".Night10" />
+        <activity android:name=".Morning08_02sad" />
+        <activity android:name=".Vote09_02" />
+        <activity android:name=".Vote09" />
+        <activity android:name=".Morning08" />
+        <activity android:name=".RoleSelection07_04" />
+        <activity android:name=".RoleSelection07_03" />
+        <activity android:name=".RoleSelection07_02" />
+        <activity android:name=".RoleSelection07" />
+        <activity android:name=".CategorySelection06" />
+        <activity android:name=".GameSetting05" />
+        <activity android:name=".Menu03" />
+        <activity android:name=".Tutorial04" />
+        <activity android:name=".MainActivity01">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
