@@ -2,8 +2,8 @@
 WordMafia
 
 WordMafia app is an app that allows you to play word mafia games while rotating your phone in offline. 
-This allows everyone to enjoy the game without the need for a moderator.
-This app can save your time by picking key words randomly and proceeding the game by app.
+The app allows everyone to enjoy the game without the need for a host or MC.
+Therefore, it can save your time by picking key words randomly and proceeding the game by following app screen.
 
 Can download the app here:
 https://play.google.com/store/apps/details?id=com.kj.wordmafia
